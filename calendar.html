@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Calendar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Contact Our Business</h1>
+        <h1>Calendar</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,13 +19,18 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Get in Touch</h2>
-        <p>We'd love to hear from you. Reach out to us through any of the methods below.</p>
-    </main>
+    <section id="calendar">
+        <h2>Select a Date and Add Notes</h2>
+        <div class="calendar-container">
+            <input type="date" id="datePicker" onchange="showNotes()">
+            <textarea id="notes" placeholder="Enter notes for the selected date..."></textarea>
+            <button id="saveButton">Save Notes</button>
+        </div>
+        <p id="savedNotes">Select a date to view or add notes.</p>
+    </section>
     <footer>
-        <p>© 2024 Our Business</p>
+        <p>&copy; 2024 Financial Tracker. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

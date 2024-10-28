@@ -1,46 +1,89 @@
-body { 
+/* General Styling */
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #efe7e7;
-    background-image: url('https://wallpapercave.com/wp/wp2019353.jpg');
+    background: url('path/to/your/background-image.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
+    color: #333;
 }
 
+header, footer, section {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 10px;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header and Footer */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 2rem;
+    background-color: #343a40;
+    color: #ffffff;
     text-align: center;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #343a40;
+    color: #ffffff;
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
+    padding: 1em 0;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #495057;
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+/* Tables */
+table {
     width: 100%;
-    bottom: 0;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+td input[type="date"], td input[type="text"], td input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
